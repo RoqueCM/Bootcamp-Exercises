@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Tablero</title>
+</head>
+<body>
+    <script>
+        let number = prompt("Introduzca un número");
+        for(let i = 0; i < number; i++){
+            let text = "";
+            if (i%2 == 0) {
+                for (let j = 0; j < number; j++) {
+                    if(j%2 == 0){
+                        text = text + "0"
+                    }else {
+                        text = text + "X"
+                    }
+                }
+            }
+            else{
+                for(let j = 0; j < number; j++) {
+                    if (j%2 == 0) {
+                        text = text + "X"
+                    }else {
+                        text = text + "0"
+                    }
+                } 
+            }
+            console.log(text)
+        }
+    </script>
+</body>
+</html>
