@@ -13,6 +13,15 @@
         /*
         * Poner los nombres de los meses en un array de 12. Cuando el usuario introduce un número del 1 al 12, mostrar el nombre de ese mes en pantalla.
         */
+
+        let months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        let number = prompt("Introduzca un número del 1 al 12");
+        if (number > 12 || number < 1){
+            console.log("El número introducido no es valido");
+        }else{
+            console.log("El mes introducido es: "+months[number-1]);
+        }
+
     </script>
 </body>
 

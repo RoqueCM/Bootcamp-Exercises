@@ -24,6 +24,26 @@
         * 9	2
         * 10 1
         */
+
+        let numbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        let index = 0;
+        while (index >= 0) {
+            index = prompt("Introduzca un valor entre 0 y 10");
+            if (index > 0) {
+                if (index < 11) {
+                    numbers[index]++;
+                }
+                else {
+                    console.log("El número introducido no es correcto");
+                }
+            } else {
+                for (let i = 0; i < numbers.length; i++) {
+                    console.log(i + " " + numbers[i]);
+                }
+            }
+
+        }
+
     </script>
 </body>
 
